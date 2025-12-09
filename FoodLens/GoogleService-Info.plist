@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1052136410470-f0m4kkompobco7mr0rbggam6oju733v0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1052136410470-f0m4kkompobco7mr0rbggam6oju733v0</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC6sOeUJzRbLyllLD9Zs_QQAwGQnuhh_fQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1052136410470</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Group.FoodLens</string>
+	<key>PROJECT_ID</key>
+	<string>foodlens-ccd7e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>foodlens-ccd7e.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1052136410470:ios:55911c1627fe928864cca7</string>
+</dict>
+</plist>

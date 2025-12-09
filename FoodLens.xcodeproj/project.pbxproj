@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0311FFA02EE89818006A0914 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0311FF9F2EE89818006A0914 /* FirebaseAnalytics */; };
+		0311FFA22EE89818006A0914 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0311FFA12EE89818006A0914 /* FirebaseAuth */; };
+		0311FFA42EE89818006A0914 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0311FFA32EE89818006A0914 /* FirebaseFirestore */; };
+		0311FFBF2EE8A832006A0914 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 0311FFBE2EE8A832006A0914 /* GoogleSignIn */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		03A2D0FF2EA7911700198214 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +36,22 @@
 		03A2D1082EA7911700198214 /* FoodLensUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodLensUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		0311FFBD2EE8A6AA006A0914 /* Exceptions for "FoodLens" folder in "FoodLens" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 03A2D0F02EA7911500198214 /* FoodLens */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		03A2D0F32EA7911500198214 /* FoodLens */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				0311FFBD2EE8A6AA006A0914 /* Exceptions for "FoodLens" folder in "FoodLens" target */,
+			);
 			path = FoodLens;
 			sourceTree = "<group>";
 		};
@@ -52,6 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0311FFA02EE89818006A0914 /* FirebaseAnalytics in Frameworks */,
+				0311FFBF2EE8A832006A0914 /* GoogleSignIn in Frameworks */,
+				0311FFA22EE89818006A0914 /* FirebaseAuth in Frameworks */,
+				0311FFA42EE89818006A0914 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +96,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0311FF9E2EE89818006A0914 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		03A2D0E82EA7911500198214 = {
 			isa = PBXGroup;
 			children = (
 				03A2D0F32EA7911500198214 /* FoodLens */,
 				03A2D1012EA7911700198214 /* FoodLensTests */,
 				03A2D10B2EA7911700198214 /* FoodLensUITests */,
+				0311FF9E2EE89818006A0914 /* Frameworks */,
 				03A2D0F22EA7911500198214 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +144,10 @@
 			);
 			name = FoodLens;
 			packageProductDependencies = (
+				0311FF9F2EE89818006A0914 /* FirebaseAnalytics */,
+				0311FFA12EE89818006A0914 /* FirebaseAuth */,
+				0311FFA32EE89818006A0914 /* FirebaseFirestore */,
+				0311FFBE2EE8A832006A0914 /* GoogleSignIn */,
 			);
 			productName = FoodLens;
 			productReference = 03A2D0F12EA7911500198214 /* FoodLens.app */;
@@ -195,6 +231,10 @@
 			);
 			mainGroup = 03A2D0E82EA7911500198214;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0311FF9B2EE896F0006A0914 /* XCLocalSwiftPackageReference "../../Downloads/firebase-ios-sdk-main" */,
+				0311FFB82EE8A380006A0914 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 03A2D0F22EA7911500198214 /* Products */;
 			projectDirPath = "";
@@ -395,11 +435,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FoodLens/FoodLens.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X5S9875ZH3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodLens/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -423,11 +465,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FoodLens/FoodLens.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X5S9875ZH3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodLens/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,6 +602,47 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		0311FF9B2EE896F0006A0914 /* XCLocalSwiftPackageReference "../../Downloads/firebase-ios-sdk-main" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../Downloads/firebase-ios-sdk-main";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0311FFB82EE8A380006A0914 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0311FF9F2EE89818006A0914 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0311FF9B2EE896F0006A0914 /* XCLocalSwiftPackageReference "../../Downloads/firebase-ios-sdk-main" */;
+			productName = FirebaseAnalytics;
+		};
+		0311FFA12EE89818006A0914 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0311FF9B2EE896F0006A0914 /* XCLocalSwiftPackageReference "../../Downloads/firebase-ios-sdk-main" */;
+			productName = FirebaseAuth;
+		};
+		0311FFA32EE89818006A0914 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0311FF9B2EE896F0006A0914 /* XCLocalSwiftPackageReference "../../Downloads/firebase-ios-sdk-main" */;
+			productName = FirebaseFirestore;
+		};
+		0311FFBE2EE8A832006A0914 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0311FFB82EE8A380006A0914 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 03A2D0E92EA7911500198214 /* Project object */;
 }
