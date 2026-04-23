@@ -11,6 +11,7 @@
 		0311FFA22EE89818006A0914 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0311FFA12EE89818006A0914 /* FirebaseAuth */; };
 		0311FFA42EE89818006A0914 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0311FFA32EE89818006A0914 /* FirebaseFirestore */; };
 		0311FFBF2EE8A832006A0914 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 0311FFBE2EE8A832006A0914 /* GoogleSignIn */; };
+		0377D2B32F97968800FBF431 /* FoodScanner.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 0377D2B22F97968800FBF431 /* FoodScanner.mlpackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0377D2B22F97968800FBF431 /* FoodScanner.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = FoodScanner.mlpackage; sourceTree = "<group>"; };
 		03A2D0F12EA7911500198214 /* FoodLens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodLens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A2D0FE2EA7911700198214 /* FoodLensTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodLensTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A2D1082EA7911700198214 /* FoodLensUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodLensUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +113,7 @@
 				03A2D10B2EA7911700198214 /* FoodLensUITests */,
 				0311FF9E2EE89818006A0914 /* Frameworks */,
 				03A2D0F22EA7911500198214 /* Products */,
+				0377D2B22F97968800FBF431 /* FoodScanner.mlpackage */,
 			);
 			sourceTree = "<group>";
 		};
@@ -276,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0377D2B32F97968800FBF431 /* FoodScanner.mlpackage in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FoodLens/FoodLens.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X5S9875ZH3;
@@ -454,6 +459,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Group.FoodLens;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -466,6 +472,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FoodLens/FoodLens.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X5S9875ZH3;
@@ -484,6 +491,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Group.FoodLens;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

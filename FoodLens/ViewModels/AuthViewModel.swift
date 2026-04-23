@@ -98,6 +98,7 @@ class AuthViewModel: ObservableObject {
                 return
             }
             
+            
             let credential = OAuthProvider.appleCredential(
                 withIDToken: idTokenString,
                 rawNonce: nonce,

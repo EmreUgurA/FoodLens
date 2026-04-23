@@ -94,7 +94,7 @@ struct WelcomeView: View {
                                 .foregroundColor(.black)
                                 .frame(maxWidth: .infinity)
                                 .frame(height: 56)
-                                .background(Color(uiColor: .secondarySystemBackground))
+                                .background(Color(uiColor: .lightGray))
                                 .cornerRadius(30)
                         }
                     }
