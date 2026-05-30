@@ -23,11 +23,13 @@ struct FoodLensApp: App {
     
     // Tüm uygulama boyunca kullanıcının oturum durumunu takip edecek obje
     @StateObject var authViewModel = AuthViewModel()
+    @StateObject var activityStore = HealthActivityStore()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(authViewModel)
+                .environmentObject(activityStore)
         }
     }
 }
